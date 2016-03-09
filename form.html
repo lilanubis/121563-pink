@@ -6,10 +6,10 @@
   <title>HTML Academy: Пинк - Конкурс</title>
 </head>
 
-<body>
+<body class="page">
 
   <header class="page-header">
-    <div class="page-header__logo">
+    <div class="page-header__logo logo">
       <img src="http://placehold.it/75x22" width="75" height="22" alt="">
     </div>
     <nav class="main-nav">
@@ -21,50 +21,51 @@
     <h1 class="page-info__title title">Конкурс на самое безбашеное путешествие с Пинк</h1>
   </section>
 
-  <form class="contest-form">
-    <div class="text-form">
-      <p class="text-form__text text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      </p>
-      <label for="first-name">Имя:</label>
-      <input type="text" name="first-name" class="text-form__input text-input" value="Введите ваше имя">
-      <label for="last-name">Фамилия:</label>
-      <input type="text" name="last-name" class="text-form__input text-input" value="Укажите фамилию">
-      <label for="middle-name">Отчество:</label>
-      <input type="text" name="middle-name" class="text-form__input text-input" value="Ну и отчество тоже">
-    </div>
+  <p class="text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+  </p>
 
-    <div class="check-form">
-      <p class="check-form__title form-title">Ваши безбашенные достижения в путешествии</p>
+  <form class="contest-form">
+    <fieldset class="text-form">
+      <label class="label" for="first-name">Имя:</label>
+      <input type="text" name="first-name" class="text-form__input text-input" value="Введите ваше имя">
+      <label class="label" for="last-name">Фамилия:</label>
+      <input type="text" name="last-name" class="text-form__input text-input" value="Укажите фамилию">
+      <label class="label" for="middle-name">Отчество:</label>
+      <input type="text" name="middle-name" class="text-form__input text-input" value="Ну и отчество тоже">
+    </fieldset>
+
+    <fieldset class="check-form">
+      <legend class="check-form__title form-title">Ваши безбашенные достижения в путешествии</legend>
       <input type="checkbox" name="shark" class="check-form__input checkbox-input">Сделал селфи с акулой
       <input type="checkbox" name="burned" class="check-form__input checkbox-input">Обгорел на пляже
       <input type="checkbox" name="chuck" class="check-form__input checkbox-input">Видел Чака Норриса
       <input type="checkbox" name="souvenirs" class="check-form__input checkbox-input">Накупил сувениров
       <input type="checkbox" name="tower" class="check-form__input checkbox-input">Удержал башню
       <input type="checkbox" name="hotel" class="check-form__input checkbox-input">Разгромил отель
-    </div>
+    </fieldset>
 
-    <div class="contact-form">
-      <label for="phone">номерок телефончика</label>
+    <fieldset class="contact-form">
+      <label class="label" for="phone">номерок телефончика</label>
       <input type="text" name="phone" class="contact-form__input text-input" value="Номер, пожалуйста">
-      <label for="email">адресок почты</label>
+      <label class="label" for="email">адресок почты</label>
       <input type="email" name="email" class="contact-form__input email-input" value="E-mail, пожалуйста">
-    </div>
+    </fieldset>
 
-    <div class="radio-form">
-      <p class="radio-form__title form-title">С каким приложением путешествовали?
-      </p>
+    <fieldset class="radio-form">
+      <legend class="radio-form__title form-title">С каким приложением путешествовали?
+      </legend>
       <input type="radio" name="os" class="radio-form__input radio-input" value="Pink для iOS">Pink для iOS
       <input type="radio" name="os" class="check-form__input radio-input" value="Pink на Android">Pink на Android
       <input type="radio" name="os" class="check-form__input radio-input" value="Windows Phone">Windows Phone
-    </div>
+    </fieldset>
 
-    <div class="textarea-form">
-      <p class="textarea-form__title form-title">Опишите свои эмоции
-      </p>
+    <fieldset class="textarea-form">
+      <legend class="textarea-form__title form-title">Опишите свои эмоции
+      </legend>
       <textarea class="textarea-form__input textarea-input">
         Можно прям в красках, не стесняясь в выражениях
       </textarea>
-    </div>
+    </fieldset>
     <input type="submit" class="contest-form__submit submit-input" value="Оправить форму">
     <p class="contest-form__text text">* — обязательные поля</p>
   </form>
@@ -82,7 +83,7 @@
   </div>
 
   <footer class="page-footer">
-    <div class="page-footer__logo">
+    <div class="page-footer__logo logo">
       <img src="http://placehold.it/147x40" width="147" height="40" alt="">
     </div>
     <div class="page-footer__social social-buttons">
