@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body class="page">
+
+  <header class="page-header">
+    <div class="page-header__logo logo">
+      <img src="http://placehold.it/75x22" width="75" height="22" alt="">
+    </div>
+    <nav class="main-nav">
+      <img src="http://placehold.it/50x24" width="50" height="24" alt="">
+      <img class="main-nav__close" src="http://placehold.it/24x23" width="24" height="23" alt="">
+      <ul class="main-nav__menu mobile-menu">
+        <li class="mobile-menu__item">Информация</li>
+        <li class="mobile-menu__item">Возможности</li>
+        <li class="mobile-menu__item">Отзывы</li>
+        <li class="mobile-menu__item">Стоимость</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro page-info">
+    <h1 class="intro__title title">Взгляните на жизнь иначе!</h1>
+    <a href="#" class="intro__btn btn">Скачать приложение</a>
+    <div class="intro__available available">
+      <a href="#" class="available__item available_item--istore">1</a>
+      <a href="#" class="available__item available_item--google">2</a>
+      <a href="#" class="available__item available_item--windows">3</a>
+    </div>
+    <p class="text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </section>
+
+  <section class="information">
+    <h1 class="information__title title">Устали от серости мегаполиса?
+      <br>Нам есть, что вам предложить!
+    </h1>
+
+    <div class="information__block">
+      <h2 class="information__subtitle subtitle">Поднимает настроение
+    </h2>
+      <p class="text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+      </p>
+    </div>
+
+    <div class="information__block">
+      <h2 class="information__subtitle subtitle">Меняет мир вокруг
+    </h2>
+      <p class="information__text text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+      </p>
+    </div>
+    <div class="information__block">
+      <h2 class="information__subtitle subtitle">Заводит новых друзей
+    </h2>
+      <p class="information__text text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+      </p>
+    </div>
+  </section>
+
+  <section class="review">
+    <blockquote class="review__quote quote">
+      <p class="quote__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+      </p>
+      <footer class="quote__footer">
+        <p class="quote__footer-text"><cite class="quote__cite">Николай Петров</cite></p>
+      </footer>
+    </blockquote>
+    <div class="review__slider slider">
+      <span>slider bullet 1</span>
+      <span>slider bullet 2</span>
+      <span>slider bullet 3</span>
+    </div>
+  </section>
+
+  <section class="price">
+    <div class="option price__options price__option--active">
+      <header class="option__header">
+        <p class="option__title">стандарт</p>
+        <p class="option__price">3,99 USD</p>
+      </header>
+      <ul class="option__list">
+        <li class="option__item">розовый фильтр</li>
+        <li class="option__item">смайлики</li>
+        <li class="option__item">комментарии</li>
+      </ul>
+    </div>
+    <div class="price__slider slider">
+      <span>slider bullet 1</span>
+      <span>slider bullet 2</span>
+      <span>slider bullet 3</span>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <p class="contacts__title title">Остались вопросы? Свяжитесь с нами!</p>
+    <h2 class="contacts__subtitle subtitle">Звоните:</h2>
+    <p class="contacts__text">+7 (812) 555-66-66</p>
+    <h2 class="contacts__subtitle subtitle">Пишите:</h2>
+    <p class="contacts__text">mail@htmlacademy.ru</p>
+    <h2 class="contacts__subtitle subtitle">Приезжайте в гости:</h2>
+    <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+    <iframe class="contacts__map">iframe</iframe>
+  </section>
+</body>
+
 </html>
