@@ -1,1 +1,18 @@
-.information {background: grey;}
+.information {
+  background: grey;
+  min-height:1000px;
+
+  @media($tablet) {
+  min-height:1115px;
+  }
+
+  @media($desktop) {
+  min-height:1364px;
+  }
+}
+
+.information__block {
+  background:white;
+  outline:1px solid black;
+  min-height:140px;
+}

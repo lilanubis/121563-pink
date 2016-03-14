@@ -1,1 +1,8 @@
-.upload {outline:3px solid green;}
+.upload {
+  background:tomato;
+  outline:2px solid pink;
+  min-height:750px;
+  @media($tablet){
+    min-height:500px;
+  }
+}

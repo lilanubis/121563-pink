@@ -1,1 +1,11 @@
-.radio-form {outline:3px solid hotpink;}
+.radio-form {outline:3px solid hotpink;
+  min-height: 340px;
+  @media($tablet) {
+    min-height: 340px;
+  }
+  @media($desktop) {
+    width: 420px;
+    min-height: 300px;
+    display: inline-block;
+  }
+  }

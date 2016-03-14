@@ -1,1 +1,10 @@
-.contact-form {outline:3px solid black;}
+.contact-form {
+  outline: 3px solid blue;
+  min-height: 300px;
+  @media($tablet) {
+    min-height: 330px;
+  }
+  @media($desktop) {
+    min-height: 180px;
+  }
+}

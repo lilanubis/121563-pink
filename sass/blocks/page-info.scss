@@ -1,0 +1,12 @@
+.page-info {
+outline:1px solid black;
+background: white;
+min-height:237px;
+@media($tablet){
+  min-height: 440px;
+}
+@media($desktop){
+  min-height: 394px;
+}
+
+}

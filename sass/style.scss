@@ -1,11 +1,16 @@
-@import "variables.css";
-@import "mixins.css";
+@import "variables.scss";
+@import "mixins.scss";
 @import "blocks/page.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/logo.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/page-info.scss";
 @import "blocks/intro.scss";
 @import "blocks/available.scss";
 @import "blocks/information.scss";
+@import "blocks/round-diagram";
 @import "blocks/review.scss";
 @import "blocks/price.scss";
 @import "blocks/option.scss";
@@ -13,6 +18,7 @@
 @import "blocks/contacts.scss";
 @import "blocks/contest-form";
 @import "blocks/text-form";
+@import "blocks/check-form";
 @import "blocks/contact-form";
 @import "blocks/radio-form";
 @import "blocks/textarea-form";
