@@ -1,1 +1,7 @@
-.price {background: yellow;}
+.price {
+  background: yellow;
+  min-height: 375px;
+  @media ($desktop){
+    min-height:520px;
+  }
+}

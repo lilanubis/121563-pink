@@ -1,1 +1,12 @@
-.main-nav {background: tomato;}
+.main-nav {
+  background: tomato;
+  min-height:325px;
+
+  @media($tablet) {
+    min-height:365px;
+  }
+
+  @media($desktop) {
+  min-height:65px;
+  }
+}

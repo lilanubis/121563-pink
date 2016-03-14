@@ -1,1 +1,12 @@
-.contacts {background:lightblue;}
+.contacts {
+  background:lightblue;
+  min-height:615px;
+
+  @media($tablet) {
+    min-height:775px;
+  }
+
+  @media($desktop) {
+  min-height:870px;
+  }
+}

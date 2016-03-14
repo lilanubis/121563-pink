@@ -1,0 +1,30 @@
+.round-diagram {
+  background: lightpink;
+  min-height: 615px;
+  @media($mobile) {
+    display: none;
+  }
+  @media($tablet) {}
+  @media($desktop) {}
+}
+.round-diagram__illustration {
+  outline: 1px solid black;
+  display: inline-block;
+  @media($tablet) {
+    width: 240px;
+  }
+  @media($desktop) {
+    width: 300px;
+  }
+}
+.round-diagram__desc {
+  outline: 1px solid black;
+  float: right;
+  min-height: 220px;
+  @media($tablet) {
+    width: 310px;
+  }
+  @media($desktop) {
+    width: 570px;
+  }
+}

@@ -1,2 +1,14 @@
-.page-footer {outline:4px solid olive;
+.page-footer {
+  outline: 4px solid olive;
+  @media($tablet) {
+    min-height: 130px;
+  }
+  @media($desktop) {
+    min-height: 200px;
+  }
+}
+.page-footer__mobile {
+  @media($mobile) {
+    display: none;
+  }
 }

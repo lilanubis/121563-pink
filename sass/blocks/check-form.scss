@@ -1,1 +1,10 @@
-.check-form {outline:3px solid blue;}
+.check-form {
+  outline: 3px solid black;
+  min-height: 385px;
+  @media($tablet) {
+    min-height: 350px;
+  }
+  @media($desktop) {
+    min-height: 240px;
+  }
+}
