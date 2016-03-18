@@ -1,6 +1,7 @@
 .main-nav {
   background: tomato;
   min-height:325px;
+  display:none;
 
   @media($tablet) {
     min-height:365px;
@@ -8,5 +9,6 @@
 
   @media($desktop) {
   min-height:65px;
+  display:inline;
   }
 }

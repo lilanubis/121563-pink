@@ -1,5 +1,7 @@
 .page-footer {
   outline: 4px solid olive;
+  display:flex;
+  justify-content: space-between;
   @media($tablet) {
     min-height: 130px;
   }

@@ -1,6 +1,9 @@
 .price {
-  background: yellow;
-  min-height: 375px;
+  outline:2px solid red;
+  min-height: 470px;
+  @media($tablet){
+    min-height:350px;
+  }
   @media ($desktop){
     min-height:520px;
   }
