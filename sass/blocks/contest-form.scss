@@ -1,0 +1,17 @@
+.contest-form {
+  background:lightblue;
+  min-height:2000px;
+  display:flex;
+  flex-direction: column;
+
+  @media($tablet){
+    min-height:2300px;
+  }
+
+  @media($desktop){
+  min-height: 1250px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
+
+}

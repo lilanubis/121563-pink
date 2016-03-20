@@ -1,0 +1,29 @@
+.review {
+  outline:2px solid black;
+  min-height:350px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;;
+  @media($desktop){
+    min-height:426px;
+  }
+}
+
+.review__prev-next {
+
+  @media($mobile){
+    display:none;
+  }
+  @media($tablet){
+    display:none;
+  }
+@media($desktop){
+  display:block;
+}
+}
+
+.review__slider {
+  @media($desktop){
+    display: none;
+  }
+}

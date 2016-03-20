@@ -1,0 +1,16 @@
+.text-form {
+  outline: 3px solid red;
+  min-height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media($tablet) {
+    min-height: 350px;
+    order:-5;
+  }
+  @media($desktop) {
+    width: 420px;
+    min-height: 300px;
+    display: inline-block;
+  }
+}

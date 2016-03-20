@@ -1,0 +1,16 @@
+.popup {
+  background:yellow;
+  height:290px;
+  width:320px;
+  display: none;
+
+  @media($tablet) {
+    width:460px;
+    height:360px;
+  }
+
+  @media($desktop) {
+    width:780px;
+    height:375px;
+  }
+}

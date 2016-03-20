@@ -1,0 +1,20 @@
+.page-footer {
+  outline: 4px solid olive;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  min-height: 290px;
+  @media($tablet) {
+    min-height: 130px;
+  }
+  @media($desktop) {
+    min-height: 200px;
+    flex-direction: row;
+  }
+}
+.page-footer__mobile {
+  @media($mobile) {
+    display: none;
+  }
+}

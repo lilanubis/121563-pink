@@ -1,0 +1,9 @@
+.textarea-form {
+  outline:3px solid green;
+  display: flex;
+  flex-direction: column;
+
+  @media($desktop){
+    width:100%;
+  }
+}

@@ -1,0 +1,38 @@
+.photo {
+  min-height:320px;
+
+  @media($tablet){
+    width:300px;
+    min-height: 456px;
+  }
+  margin-bottom:30px;
+}
+
+
+.panorama__tag {
+  position:absolute;
+  left:60%;
+}
+
+
+.photo-panorama {
+  min-height: 192px;
+  outline: 2px solid black;
+
+  @media($tablet){
+    min-height:120px;
+  }
+}
+
+
+.photostream__text {
+  min-height:150px;
+}
+
+.photo__image {
+  min-height: 180px;
+
+  @media($tablet){
+    width:300px;
+  }
+}
