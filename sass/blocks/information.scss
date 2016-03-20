@@ -1,6 +1,9 @@
 .information {
   min-height:1000px;
   outline:2px solid blue;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   @media($tablet) {
   min-height:720px;
@@ -8,14 +11,31 @@
 
   @media($desktop) {
   min-height:915px;
+  flex-direction:row;
   }
 }
 
 .information__block {
   outline:1px solid black;
-  min-height:140px;
+  min-height:100px;
+
+  @media($tablet){
+    width:300px;
+    align-self: flex-end;
+  }
+
+  @media($desktop){
+    min-height:600px;
+  }
 }
 
 .information__title {
-  margin-bottom:130px;
+  @media($tablet){
+    min-height: 175px;
+  }
+
+  @media($desktop){
+  width:100%;
+
+  }
 }

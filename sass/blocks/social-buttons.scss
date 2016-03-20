@@ -1,1 +1,5 @@
-.social-buttons {outline:3px solid blue;}
+.social-buttons {
+  outline:3px solid blue;
+display: flex;
+justify-content: space-between;
+width:30%;}

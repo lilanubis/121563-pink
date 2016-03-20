@@ -15,7 +15,14 @@
         <img src="http://placehold.it/75x22" width="75" height="22" alt="">
       </div>
       <nav class="main-nav">
-        <img src="http://placehold.it/50x24" width="50" height="24" alt="">
+        <img class="main-nav__burger" src="http://placehold.it/50x24" width="50" height="24" alt="">
+        <img class="main-nav__close" src="http://placehold.it/24x23" width="24" height="23" alt="">
+        <ul class="main-nav__menu main-menu">
+          <li class="main-menu__item"><a href="">Информация</a></li>
+          <li class="main-menu__item"><a href="">Возможности</a></li>
+          <li class="main-menu__item"><a href="">Отзывы</a></li>
+          <li class="main-menu__item"><a href="">Стоимость</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -27,16 +34,15 @@
 
       <p class="photostream__text text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
-
-      <article class="photostream__photo photo">
-        <span class="photo__tag">панорама дня</span>
-      </article>
     </section>
   </div>
-  <img class="photo__image photo__image--panorama" src="http://placehold.it/322x137" width="322" height="137" alt="">
+  <div class="photostream__panorama--photo">
+    <span class="panorama__tag">панорама дня</span>
+    <img class="panorama__image" src="http://placehold.it/322x137" alt="">
+  </div>
   <div class="wrapper">
     <section class="photostream">
-      <article class="photostream_photo photo">
+      <article class="photostream__panorama">
         <div class="photo__text photo-text">
           <p class="photo-text__username">Анна
             <time class="photo-text__time">(5 минут назад)</time>
@@ -47,7 +53,7 @@
       </article>
 
       <article class="photostream__photo photo">
-        <img class="photo__image" src="http://placehold.it/280x180" width="280" height="180" alt="">
+        <img class="photo__image" src="http://placehold.it/280x180" alt="">
         <div class="photo__text photo-text">
           <p class="photo-text__username">Левон
             <time class="photo-text__time">(5 часов назад)</time>
@@ -58,7 +64,7 @@
       </article>
 
       <article class="photostream__photo photo">
-        <img class="photo__image" src="http://placehold.it/280x180" width="280" height="180" alt="">
+        <img class="photo__image" src="http://placehold.it/280x180" alt="">
         <div class="photo__text photo-text">
           <p class="photo-text__username">Антон
             <time class="photo-text__time">(12 часов назад)</time>
@@ -69,7 +75,7 @@
       </article>
 
       <article class="photostream__photo photo">
-        <img class="photo__image" src="http://placehold.it/280x180" width="280" height="180" alt="">
+        <img class="photo__image" src="http://placehold.it/280x180" alt="">
         <div class="photo__text photo-text">
           <p class="photo-text__username">Борис
             <time class="photo-text__time">(20 часов назад)</time>
@@ -80,7 +86,7 @@
       </article>
 
       <article class="photostream__photo photo">
-        <img class="photo__image" src="http://placehold.it/280x180" width="280" height="180" alt="">
+        <img class="photo__image" src="http://placehold.it/280x180" alt="">
         <div class="photo__text photo-text">
           <p class="photo-text__username">Сергей
             <time class="photo-text__time">(25 часов назад)</time>
@@ -91,7 +97,7 @@
       </article>
 
       <article class="photostream__photo photo">
-        <img class="photo__image" src="http://placehold.it/280x180" width="280" height="180" alt="">
+        <img class="photo__image" src="http://placehold.it/280x180" alt="">
         <div class="photo__text photo-text">
           <p class="photo-text__username">Максим
             <time class="photo-text__time">(40 часов назад)</time>
@@ -102,7 +108,7 @@
       </article>
 
       <article class="photostream__photo photo">
-        <img class="photo__image" src="http://placehold.it/280x180" width="280" height="180" alt="">
+        <img class="photo__image" src="http://placehold.it/280x180" alt="">
         <div class="photo__text photo-text">
           <p class="photo-text__username">Надежда
             <time class="photo-text__time">(45 часов назад)</time>
@@ -126,9 +132,10 @@
           <span class="upload__contrast">contrast</span>
           <span class="upload__crop-line">cropping_line</span>
           <span class="upload__crop-runner">cropping_runner</span>
+          <input type="submit" class="upload__submit" value="Запостить">
+          <button class="upload__cancel" disabled>отмена</button>
         </div>
-        <input type="submit" class="upload__submit" value="Отправить форму">
-        <button class="upload__cancel" disabled>отмена</button>
+
       </form>
     </section>
 

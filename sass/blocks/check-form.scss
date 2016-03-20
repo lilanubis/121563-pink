@@ -1,10 +1,13 @@
 .check-form {
   outline: 3px solid black;
   min-height: 385px;
+  display: flex;
+  flex-direction: column;
   @media($tablet) {
     min-height: 350px;
   }
   @media($desktop) {
     min-height: 240px;
+    width:100%;
   }
 }

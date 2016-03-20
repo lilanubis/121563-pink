@@ -1,1 +1,51 @@
-.photostream {background:lightpink;}
+.photostream {
+  outline:2px solid lightpink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+  @media($tablet){
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}
+
+.photostream__photo {
+  min-height:325px;
+  outline: 1px solid red;
+}
+
+.photostream__text {
+  width:100%;
+  @media($tablet){
+    min-height:228px;
+    outline:1px solid black;
+  }
+}
+
+.panorama__image {
+  outline:1px solid red;
+  width:322px;
+  margin:0 auto;
+
+  @media($tablet){
+    width:700px;
+    min-height: 510px;
+  }
+
+  @media($desktop){
+    width:1200px;
+    min-height: 510px;
+  }
+}
+
+.photostream__panorama {
+  min-height: 192px;
+}
+
+.photostream__panorama--photo {
+  display:flex;
+}

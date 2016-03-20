@@ -10,3 +10,15 @@ min-height:237px;
 }
 
 }
+
+.photopage-info {
+  outline: 2px solid white;
+  min-height:165px;
+  @media($tablet){
+    min-height: 331px;
+  }
+  @media($desktop){
+    min-height: 287px;
+  }
+
+}

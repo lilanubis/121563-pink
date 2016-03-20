@@ -1,7 +1,6 @@
-.main-nav {
-  background: tomato;
+.main-nav__menu {
   min-height:325px;
-  display:none;
+  display: none;
 
   @media($tablet) {
     min-height:365px;
@@ -10,5 +9,15 @@
   @media($desktop) {
   min-height:65px;
   display:inline;
+  }
+}
+
+.main-nav__close {
+  display:none;
+}
+
+.main-nav__burger {
+  @media($desktop){
+    display:none;
   }
 }

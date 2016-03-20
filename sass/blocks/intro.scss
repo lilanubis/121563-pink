@@ -1,6 +1,9 @@
 .intro {
   outline:2px solid black;
   min-height:660px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media($tablet){
     min-height:620px;
@@ -10,8 +13,10 @@
   }
 }
 
-.intro__title {
-  @media($mobile) {
-    display:none;
-  }
+.intro__title{
+  flex-grow: 3;
+}
+
+.intro__available {
+  flex-grow:2;
 }
