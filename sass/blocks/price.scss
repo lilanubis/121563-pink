@@ -1,7 +1,40 @@
 .price {
-  background: yellow;
-  min-height: 375px;
+  outline:2px solid red;
+  min-height: 470px;
+
+  @media($tablet){
+    min-height:350px;
+  }
   @media ($desktop){
     min-height:520px;
+  }
+}
+
+.price__option {
+  display:table;
+}
+
+.price__option--base {
+  @media($mobile){
+    display:none;
+  }
+}
+
+.price__option--unlim {
+  @media($mobile){
+    display:none;
+  }
+}
+
+.price__table {
+  display:flex;
+}
+
+.price__slider {
+  @media($tablet){
+    display:none;
+  }
+  @media($desktop){
+    display: none;
   }
 }

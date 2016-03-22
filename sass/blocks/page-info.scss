@@ -1,6 +1,6 @@
 .page-info {
 outline:1px solid black;
-background: white;
+
 min-height:237px;
 @media($tablet){
   min-height: 440px;
@@ -8,5 +8,17 @@ min-height:237px;
 @media($desktop){
   min-height: 394px;
 }
+
+}
+
+.photopage-info {
+  outline: 2px solid white;
+  min-height:165px;
+  @media($tablet){
+    min-height: 331px;
+  }
+  @media($desktop){
+    min-height: 287px;
+  }
 
 }

@@ -1,11 +1,13 @@
 .round-diagram {
-  background: lightpink;
+  outline:2px solid black;
   min-height: 615px;
   @media($mobile) {
     display: none;
   }
-  @media($tablet) {}
-  @media($desktop) {}
+  @media($tablet) {
+    min-height:360px;
+  }
+  @media($desktop) {min-height:455px;}
 }
 .round-diagram__illustration {
   outline: 1px solid black;

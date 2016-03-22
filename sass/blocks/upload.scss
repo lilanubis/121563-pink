@@ -1,8 +1,30 @@
 .upload {
-  background:tomato;
   outline:2px solid pink;
-  min-height:750px;
+  min-height:760px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   @media($tablet){
     min-height:500px;
   }
+}
+
+.upload__text {
+  width:100%;
+}
+
+.upload__image {
+  width:280px;
+}
+
+.upload__form {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.upload__toggles {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width:280px;
 }

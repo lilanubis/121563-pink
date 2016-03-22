@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <link href="css/style.css" rel="stylesheet">
-  <title>HTML Academy: Пинк</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <title>HTML Academy: Пинк!</title>
 </head>
 
 <body class="page">
@@ -15,7 +16,7 @@
         <img src="http://placehold.it/75x22" width="75" height="22" alt="">
       </div>
       <nav class="main-nav">
-        <img src="http://placehold.it/50x24" width="50" height="24" alt="">
+        <img class="main-nav__burger" src="http://placehold.it/50x24" width="50" height="24" alt="">
         <img class="main-nav__close" src="http://placehold.it/24x23" width="24" height="23" alt="">
         <ul class="main-nav__menu main-menu">
           <li class="main-menu__item"><a href="">Информация</a></li>
@@ -88,10 +89,28 @@
         <span>slider bullet 2</span>
         <span>slider bullet 3</span>
       </div>
+      <div class="review__prev-next">
+      <span class="review__next">next</span>
+      <span class="review__prev">prev</span>
+    </div>
     </section>
 
     <section class="price">
-      <div class="option price__options price__option--active">
+      <div class="price__table">
+
+      <div class="price__option price__option--base">
+        <header class="option__header">
+          <p class="option__title">база</p>
+          <p class="option__price">1,99 USD</p>
+        </header>
+        <ul class="option__list">
+          <li class="option__item">розовый фильтр</li>
+          <li class="option__item">смайлики</li>
+          <li class="option__item">комментарии</li>
+        </ul>
+      </div>
+
+      <div class="price__option price__option--standart">
         <header class="option__header">
           <p class="option__title">стандарт</p>
           <p class="option__price">3,99 USD</p>
@@ -102,6 +121,19 @@
           <li class="option__item">комментарии</li>
         </ul>
       </div>
+
+      <div class="price__option price__option--unlim">
+        <header class="option__header">
+          <p class="option__title">анлим</p>
+          <p class="option__price">9,99 USD</p>
+        </header>
+        <ul class="option__list">
+          <li class="option__item">розовый фильтр</li>
+          <li class="option__item">смайлики</li>
+          <li class="option__item">комментарии</li>
+        </ul>
+      </div>
+    </div>
       <div class="price__slider slider">
         <span>slider bullet 1</span>
         <span>slider bullet 2</span>
@@ -111,12 +143,18 @@
 
     <section class="contacts">
       <p class="contacts__title title">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="contacts__block">
       <h2 class="contacts__subtitle subtitle">Звоните:</h2>
       <p class="contacts__text">+7 (812) 555-66-66</p>
+    </div>
+    <div class="contacts__block">
       <h2 class="contacts__subtitle subtitle">Пишите:</h2>
       <p class="contacts__text">mail@htmlacademy.ru</p>
+    </div>
+    <div class="contacts__block">
       <h2 class="contacts__subtitle subtitle">Приезжайте в гости:</h2>
       <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+    </div>
       <iframe class="contacts__map">iframe</iframe>
     </section>
 

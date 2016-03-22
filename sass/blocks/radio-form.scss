@@ -1,7 +1,11 @@
 .radio-form {outline:3px solid hotpink;
   min-height: 340px;
+  display: flex;
+  flex-direction: column;
   @media($tablet) {
     min-height: 340px;
+    order:-5;
+
   }
   @media($desktop) {
     width: 420px;
