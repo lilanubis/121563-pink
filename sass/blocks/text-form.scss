@@ -1,9 +1,12 @@
 .text-form {
-  outline: 3px solid red;
+  width:280px;
   min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
   @media($tablet) {
     min-height: 350px;
     order:-5;
@@ -13,4 +16,9 @@
     min-height: 300px;
     display: inline-block;
   }
+}
+
+fieldset {
+  border:none;
+  border-color:transparent;
 }

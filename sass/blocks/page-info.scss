@@ -1,5 +1,5 @@
 .page-info {
-outline:1px solid black;
+
 
 min-height:237px;
 @media($tablet){
@@ -12,8 +12,9 @@ min-height:237px;
 }
 
 .photopage-info {
-  outline: 2px solid white;
-  min-height:165px;
+  text-align: center;
+  min-height:50px;
+  margin-top:20px;
   @media($tablet){
     min-height: 331px;
   }
@@ -21,4 +22,8 @@ min-height:237px;
     min-height: 287px;
   }
 
+}
+
+.page-info__title {
+  color:#ffffff;
 }

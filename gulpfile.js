@@ -28,8 +28,7 @@ gulp.task("serve", ["style"], function() {
   server.init({
     server: ".",
     notify: false,
-    open: true,
-    ui: false
+    open: true
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);

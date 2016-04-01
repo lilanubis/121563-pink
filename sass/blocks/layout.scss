@@ -1,0 +1,31 @@
+
+.layout {
+
+  text-align: center;
+  width:100%;
+display: flex;
+font:$font-14n;
+@media($tablet){
+
+}
+
+  @media($desktop){
+      width:420px;
+    }
+}
+
+
+.layout-photostream__text {
+  min-height: 184px;
+  @media($tablet){
+    min-height: 228px;
+  }
+}
+
+.layout-upload__text {
+  min-height: 174px;
+  @media($tablet){
+    min-height:195px;
+    align-self: center;
+  }
+}

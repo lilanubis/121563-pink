@@ -1,0 +1,41 @@
+.quote {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  width:100%;
+  margin:0 auto;
+}
+
+.quote__cite {
+  font:$quote;
+}
+
+.quote__footer {
+
+  text-align:center;
+
+}
+
+.quote__footer-whois {
+  @media($mobile){
+    display:none;
+  }
+  font:$main-font;
+  @media($desktop){
+    margin-top:-10px;
+  }
+}
+
+.quote__text {
+  @media($mobile){
+    order:1;
+    font:$table-font-t;
+  }
+  @media($desktop){
+    width:680px;
+    text-align: center;
+
+  }
+}

@@ -1,49 +1,39 @@
 .photostream {
-  outline:2px solid lightpink;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
 
 
   @media($tablet){
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
   }
 }
 
-.photostream__photo {
-  min-height:325px;
-  outline: 1px solid red;
-}
-
 .photostream__text {
   width:100%;
+  align-self: center;
+  font:$font-14n;
   @media($tablet){
-    min-height:228px;
-    outline:1px solid black;
+    font:$font-18n;
   }
 }
 
-.panorama__image {
-  outline:1px solid red;
-  width:322px;
-  margin:0 auto;
 
-  @media($tablet){
-    width:700px;
-    min-height: 510px;
-  }
-
-  @media($desktop){
-    width:1200px;
-    min-height: 510px;
-  }
-}
 
 .photostream__panorama {
   min-height: 192px;
+margin-bottom: 20px;
+  background: $bg-color;
+  @media($tablet){
+
+  }
+  @media($desktop){
+
+  }
 }
 
 .photostream__panorama--photo {

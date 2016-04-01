@@ -1,0 +1,50 @@
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans.woff');
+    font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensansbold.woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensanslight.woff');
+  font-weight: light;
+}
+
+$main-color:#283645;
+$pink-color:#d22856;
+
+$main-font:normal 18px/30px 'Open Sans';
+$main-font-bold: bold 18px/30px 'Open Sans';
+$main-font-light: 100 18px/30px 'Open Sans';
+
+$btn-font:bold 21px 'Open Sans';
+$quote:bold 24px 'Open Sans';
+$contacts-font:100 24px 'Open Sans';
+$subtitle-font:bold 30px/30px 'Open Sans';
+$table-font:bold 16px 'Open Sans';
+$table-font-t:normal 14px/24px 'Open Sans';
+$title-font:100 50px/60px 'Open Sans';
+$title-font-small:100 40px 'Open Sans';
+
+$font-12l: 100 12px/24px 'Open Sans';
+$font-12n: normal 12px/24px 'Open Sans';
+$font-12b: bold 12px/24px 'Open Sans';
+$font-14n: normal 14px/24px 'Open Sans';
+$font-14b: bold 14px/24px 'Open Sans';
+$font-16b: bold 16px 'Open Sans';
+$font-18n: normal 18px/30px 'Open Sans';
+$font-18b: bold 18px/30px 'Open Sans';
+$font-18l: 100 18px/30px 'Open Sans';
+$font-21b: bold 21px 'Open Sans';
+$font-24b: bold 24px 'Open Sans';
+$font-24l: 100 24px 'Open Sans';
+$font-30b: bold 30px/30px 'Open Sans';
+$font-40l: 100 40px 'Open Sans';
+$font-50l: 100 50px/60px 'Open Sans';

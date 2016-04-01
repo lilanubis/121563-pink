@@ -1,0 +1,58 @@
+.text {
+  font: $main-font;
+  font-weight: 400;
+  color:$main-color;
+}
+
+.subtitle {
+  font:$subtitle-font;
+  color:black;
+}
+
+.title {
+  font:$font-50l;
+  color:$main-color;
+  text-align: center;
+  @media($mobile){
+    font:$font-24l;
+  }
+  @media($tablet){
+    font:$font-50l;
+  }
+}
+
+.contacts__text {
+  font:$contacts-font;
+  color:$pink-color;
+}
+
+.text-available {
+
+  font-family: 'Open Sans';
+  font-weight: 100;
+  color:white;
+}
+
+.link {
+
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color:$pink-color;
+  text-decoration: underline;
+}
+.label {
+  font:$font-14n;
+  color:$pink-color;
+  text-transform: uppercase;
+  margin-left:10px;
+  border:none;
+
+}
+
+.form-title {
+  font:$font-14n;
+  color:$pink-color;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom:50px;
+}

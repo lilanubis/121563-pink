@@ -1,5 +1,4 @@
 .page-footer {
-  outline: 4px solid olive;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,10 +6,16 @@
   min-height: 290px;
   @media($tablet) {
     min-height: 130px;
+    flex-direction: row;
   }
   @media($desktop) {
     min-height: 200px;
     flex-direction: row;
+  }
+  @media($mobile){
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
   }
 }
 .page-footer__mobile {

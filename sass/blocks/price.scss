@@ -1,40 +1,123 @@
 .price {
-  outline:2px solid red;
-  min-height: 470px;
-
-  @media($tablet){
-    min-height:350px;
-  }
-  @media ($desktop){
-    min-height:520px;
-  }
-}
-
-.price__option {
-  display:table;
-}
-
-.price__option--base {
-  @media($mobile){
-    display:none;
-  }
-}
-
-.price__option--unlim {
-  @media($mobile){
-    display:none;
-  }
-}
-
-.price__table {
-  display:flex;
-}
-
-.price__slider {
-  @media($tablet){
-    display:none;
-  }
   @media($desktop){
-    display: none;
+    padding-top:60px;
+
+    }
   }
+
+.table {
+  width:100%;
+  border-collapse:collapse;
+
+}
+
+.cell-empty{
+  @media($mobile){
+    display:none;
+  }
+}
+
+.cell-header {
+  background-color:#283645;
+  border-right:2px solid #e7e7e7;
+  text-align:center;
+  color:white;
+  width:155px;
+  height:80px;
+  box-sizing:border-box;
+}
+
+.cell-header:nth-child(2) {
+  @media($mobile){
+  display:none;
+}
+}
+
+.cell-header:last-child {
+  border:none;
+  @media($mobile){
+  display:none;
+}
+}
+
+.cell-header:nth-child(3){
+  background: url(../img/bg-hit.svg) no-repeat top left $main-color;
+  position: relative;
+  @media($mobile){
+    width:100%;
+  }
+}
+
+.cell-header__hit {
+  position:absolute;
+  transform: rotate(-45deg);
+  top:25px;
+  left:25px;
+  font:$table-font-t
+
+}
+
+.cell-title {
+  text-transform: uppercase;
+  font:$table-font;
+  margin-bottom:-15px;
+}
+
+.cell-price {
+  font:$main-font-light;
+}
+
+.table-row {
+  background-color:white;
+}
+
+.cell__option {
+  width:155px;
+  height:45px;
+  box-sizing:border-box;
+  border:2px solid #e7e7e7;
+  padding:15px;
+  font:$main-font;
+  color:$main-color;
+  @media($tablet){
+
+  }
+}
+
+.cell__option--pink {
+  @media($mobile){
+    background:url('../img/icon-yes.svg') no-repeat;
+    background-position: 90% 50%;
+
+  }
+}
+.cell__option--smileys {
+  @media($mobile){
+    background:url('../img/icon-yes.svg') no-repeat;
+    background-position: 90% 50%;
+  }
+}
+.cell__option--comments {
+    @media($mobile){
+      background:url('../img/icon-no.svg') no-repeat;
+      background-position: 90% 50%;
+
+    }
+  }
+
+.cell-aval {
+  border:2px solid #e7e7e7;
+  font-size:0;
+  position:relative;
+  @media($mobile){
+    display:none;
+  }
+}
+
+.cell-aval--y {
+  background:url('../img/icon-yes.svg') no-repeat center center;
+}
+
+.cell-aval--n {
+  background:url('../img/icon-no.svg') no-repeat center center;
 }

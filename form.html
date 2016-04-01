@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <link href="css/style.css" rel="stylesheet">
-  <title>HTML Academy: Пинк - Конкурс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <title>HTML Academy: Пинк!</title>
 </head>
 
 <body class="page">
-  <div class="wrapper">
-    <header class="page-header">
-      <div class="page-header__logo logo">
-        <img src="http://placehold.it/75x22" width="75" height="22" alt="">
+  <header class="page-header page-header__photo">
+
+      <div class="page-header__outside">
+        <div class="wrapper">
+            <div class="page-header__inside">
+        <div class="page-header__logo logo">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="">
+        </div>
+        <nav class="main-nav">
+          <img class="main-nav__burger" src="img/icon-menu-burger.svg" width="50" height="24" alt="">
+          <img class="main-nav__close" src="http://placehold.it/24x23" width="24" height="23" alt="">
+          <ul class="main-nav__menu main-menu">
+            <li class="main-menu__item"><a>Главная</a></li>
+            <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-menu__item"><a href="">HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <img class="main-nav__burger" src="http://placehold.it/50x24" width="50" height="24" alt="">
-        <img class="main-nav__close" src="http://placehold.it/24x23" width="24" height="23" alt="">
-        <ul class="main-nav__menu main-menu">
-          <li class="main-menu__item"><a href="">Информация</a></li>
-          <li class="main-menu__item"><a href="">Возможности</a></li>
-          <li class="main-menu__item"><a href="">Отзывы</a></li>
-          <li class="main-menu__item"><a href="">Стоимость</a></li>
-        </ul>
-      </nav>
-    </header>
+      </div>
+      </div>
+
+  <div class="wrapper">
 
   <section class="page-info formpage-info">
     <h1 class="page-info__title title">Конкурс на самое безбашеное путешествие с Пинк</h1>
   </section>
+</div>
+</header>
+<div class="wrapper">
 
-  <p class="text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-  </p>
+  <div class="layout layout-form__text">
+    <p class="text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+    </p>
+    </div>
+
+
 
   <form class="contest-form">
     <fieldset class="text-form">
@@ -45,27 +59,65 @@
 
     <fieldset class="check-form">
       <legend class="check-form__title form-title">Ваши безбашенные достижения в путешествии</legend>
-      <input type="checkbox" name="shark" class="check-form__input checkbox-input">Сделал селфи с акулой
-      <input type="checkbox" name="burned" class="check-form__input checkbox-input">Обгорел на пляже
-      <input type="checkbox" name="chuck" class="check-form__input checkbox-input">Видел Чака Норриса
-      <input type="checkbox" name="souvenirs" class="check-form__input checkbox-input">Накупил сувениров
-      <input type="checkbox" name="tower" class="check-form__input checkbox-input">Удержал башню
-      <input type="checkbox" name="hotel" class="check-form__input checkbox-input">Разгромил отель
+      <label class="control checkbox">
+  <input type="checkbox">
+  <span class="control-indicator"></span>
+  Сделал селфи с акулой
+</label>
+<label class="control checkbox">
+<input type="checkbox">
+<span class="control-indicator"></span>
+Обгорел на пляже
+</label>
+<label class="control checkbox">
+<input type="checkbox">
+<span class="control-indicator"></span>
+Видел Чака Норриса
+</label>
+<label class="control checkbox">
+<input type="checkbox">
+<span class="control-indicator"></span>
+Накупил сувениров
+</label>
+<label class="control checkbox">
+<input type="checkbox">
+<span class="control-indicator"></span>
+Удержал башню
+</label>
+<label class="control checkbox">
+<input type="checkbox">
+<span class="control-indicator"></span>
+Разгромил отель
+</label>
+
     </fieldset>
 
     <fieldset class="contact-form">
       <label class="label" for="phone">номерок телефончика</label>
       <input type="text" name="phone" class="contact-form__input text-input" value="Номер, пожалуйста">
       <label class="label" for="email">адресок почты</label>
-      <input type="email" name="email" class="contact-form__input email-input" value="E-mail, пожалуйста">
+      <input type="email" name="email" class="contact-form__input text-input" value="E-mail, пожалуйста">
     </fieldset>
 
     <fieldset class="radio-form">
       <legend class="radio-form__title form-title">С каким приложением путешествовали?
       </legend>
-      <input type="radio" name="os" class="radio-form__input radio-input" value="Pink для iOS">Pink для iOS
-      <input type="radio" name="os" class="check-form__input radio-input" value="Pink на Android">Pink на Android
-      <input type="radio" name="os" class="check-form__input radio-input" value="Windows Phone">Windows Phone
+      <label class="control radio">
+  <input id="radio1" name="radio" type="radio">
+  <span class="control-indicator2"></span>
+  Pink для iOS
+</label>
+<label class="control radio">
+<input id="radio2" name="radio" type="radio">
+<span class="control-indicator2"></span>
+Pink на Android
+</label>
+<label class="control radio">
+<input id="radio3" name="radio" type="radio">
+<span class="control-indicator2"></span>
+Windows Phone
+</label>
+
     </fieldset>
 
     <fieldset class="textarea-form">

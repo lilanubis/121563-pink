@@ -1,41 +1,106 @@
 .information {
-  min-height:1000px;
-  outline:2px solid blue;
-  display:flex;
-  flex-direction: column;
+  min-height: 1000px;
+  display: flex;
   flex-wrap: wrap;
-
+  flex-direction: column;
+  margin-top: 25px;
+  @media($mobile){
+    background:url("../img/iphone-screen-desktop-3@1x.png") no-repeat center bottom;
+  }
   @media($tablet) {
-  min-height:720px;
-  }
+    min-height: 720px;
+    flex-direction: row;
+    background:url("../img/iphone-screen-tablet-3@2x.png") no-repeat left bottom;
+    background-size: auto 60%;
 
+  }
   @media($desktop) {
-  min-height:915px;
-  flex-direction:row;
+    min-height: 915px;
+    flex-direction: row;
+    background: none;
   }
 }
-
-.information__block {
-  outline:1px solid black;
-  min-height:100px;
-
-  @media($tablet){
-    width:300px;
-    align-self: flex-end;
+.information__blocks {
+  display: flex;
+  justify-content: space-around;
+  @media($tablet) {
+    width: 100%;
+    flex-direction: row;
   }
-
-  @media($desktop){
-    min-height:600px;
+  @media($desktop) {
+    min-height: 600px;
+    width: 100%;
+    flex-direction: row;
   }
 }
-
 .information__title {
-  @media($tablet){
+  text-align: center;
+  font: $contacts-font;
+  @media($mobile){
+  height:140px;
+}
+  @media($tablet) {
     min-height: 175px;
+    font: $title-font-small;
   }
-
-  @media($desktop){
-  width:100%;
-
+  @media($desktop) {
+    width: 100%;
+    font: $title-font;
+  }
+}
+.information__block {
+  @media($mobile){
+    text-align:center;
+  }
+  @media($tablet){
+    text-align: left;
+    width:40%;
+  }
+  @media($desktop) {
+    padding-top: 330px;
+    width: 240px;
+    height: 300px;
+    text-align:center;
+  }
+}
+.information__block:first-child {
+    background: none;
+@media($desktop){
+  background: url("../img/iphone-screen-desktop-1@1x.png") no-repeat center top;
+}
+}
+.information__block:nth-child(2) {
+@media($desktop){
+  background: url("../img/iphone-screen-desktop-2@1x.png") no-repeat center top;
+}
+}
+.information__block:nth-child(3) {
+    background: none;
+    @media($desktop){
+      background: url("../img/iphone-screen-desktop-3@1x.png") no-repeat center top;
+}
+}
+.information__blocks {
+  flex-direction: column;
+  @media($desktop) {
+    flex-direction: row;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media($tablet){
+    align-items: flex-end;
+  }
+}
+.information__subtitle {
+  font: $main-font-bold;
+  @media($desktop) {
+    font: $subtitle-font;
+  }
+}
+.information__text {
+  font: $table-font-t;
+  @media($desktop) {
+    font: $main-font;
   }
 }

@@ -1,1 +1,25 @@
-.slider {outline: 3px solid black}
+.slider {
+  width:60px;
+  display: flex;
+  margin:0 auto;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:-80px;
+  @media($desktop){
+    display:none;
+  }
+}
+
+.slider__bullet {
+  width:6px;
+  height:6px;
+  border-radius: 6px;
+  background-color: $bg-color;
+  font-size: 0px;
+
+}
+
+.slider__bullet--active {
+  background:#ffffff;
+  border:2px solid $main-font-color;
+}

@@ -1,22 +1,63 @@
 .intro {
-  outline:2px solid black;
   min-height:660px;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+
 
   @media($tablet){
     min-height:620px;
+    width:50%;
   }
   @media($desktop){
-    min-height:720px;
+
+    min-height:520px;
+    width:35%;
   }
 }
 
 .intro__title{
-  flex-grow: 3;
+  text-align:center;
+  color:white;
+  @media($desktop){
+  width:250px;
+  height:160px;
+  font:$title-font;
+  }
+
+  @media($tablet){
+    font:$title-font-small;
+  }
+
+  @media($mobile){
+    min-height:380px;
+    font:$contacts-font;
+    background: url(../img/iphone-hand-desktop@1x.png) no-repeat bottom right;
+    background-size: 410px auto;
+  }
 }
 
 .intro__available {
-  flex-grow:2;
+
+}
+
+.intro__btn {
+  color:white;
+  text-decoration: none;
+  border: 3px solid white;
+  border-radius: 30px;
+  padding:10px 0;
+  text-align: center;
+  width:300px;
+  box-sizing: border-box;
+  font:$btn-font;
+
+  @media($mobile){
+    width:100%;
+  }
+}
+
+.intro__available-text {
+  text-align: center;
 }

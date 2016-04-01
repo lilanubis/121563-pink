@@ -1,7 +1,6 @@
-
-
-.main-menu li{
-  @media($desktop) {
-  display:inline;
-  }
+.main-menu__item a{
+  font: $main-font;
+  font-weight: 100;
+  color:white;
+  text-decoration: none;
 }

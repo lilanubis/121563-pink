@@ -1,1 +1,28 @@
-.madeby {background:yellow;}
+.madeby {
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width:25%;
+@media($desktop){
+  width:15%;
+}
+
+@media($mobile){
+  width:45%;
+}
+}
+
+.madeby__icon {
+  width:27px;
+  height:34px;
+  background: url(../img/logo-htmlacademy.svg) no-repeat;
+  background-size: cover;
+  font-size: 0px;
+}
+
+.madeby__text {
+  @media($mobile){
+    font:$font-14n;
+  }
+}

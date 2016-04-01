@@ -1,9 +1,42 @@
 .textarea-form {
-  outline:3px solid green;
   display: flex;
   flex-direction: column;
+  width:100%;
+  margin:0;padding:0;
 
   @media($desktop){
     width:100%;
   }
+}
+
+.text-input {
+  width:100%;
+  min-height:59px;
+  outline:2px solid $bg-color;
+  font:$font-18n;
+  padding:20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  padding:0;
+  margin:0 auto;
+}
+
+.textarea-input {
+  width:100%;
+  min-height:200px;
+  border:2px solid $bg-color;
+  font:$font-18n;
+  box-sizing: border-box;
+  margin-bottom:30px;
+}
+
+.submit-input {
+  width:100%;
+  background:#2aab6d;
+  height:65px;
+  font:$font-18b;
+  text-transform: uppercase;
+  text-align: center;
+  border:none;
+  color:#ffffff;
 }

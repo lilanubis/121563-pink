@@ -3,6 +3,7 @@
   margin:0 auto;
   display:flex;
   flex-direction:column;
+  justify-content:space-between;
 
   @media($tablet) {
     width:620px;
@@ -10,4 +11,11 @@
   @media($desktop) {
     width:940px;
   }
+}
+
+.wrapper__panorama {
+position:relative;
+margin:0 auto;
+z-index: 2;
+left:0;
 }
